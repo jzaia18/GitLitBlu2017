@@ -11,6 +11,7 @@ import processing.event.KeyEvent;
 public class GitLitBlu extends PApplet {
     
     private Character character;
+    private Touhou t;
     
     public static void main(final String[] args) {
         PApplet.main(GitLitBlu.class.getName());
@@ -23,13 +24,17 @@ public class GitLitBlu extends PApplet {
     
     @Override
     public void setup() {
+    	t = new Touhou();
+    	t.populateAtTop(this, 10);
         character = new Character(this, "Alphys.png", width * 0.5f, height * 0.5f);
     }
     
     @Override
     public void draw() {
+    	fill(150);
         clear();
-        character.display(this);
+        t.display(this);
+        //        character.display(this);
     }
     
     @Override
