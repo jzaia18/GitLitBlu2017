@@ -5,9 +5,11 @@ import processing.core.PApplet;
 public class Bullet implements Displayable{
 
 	public float x, y, heading;
+	public int size;
 	private int r, g, b;
 	
 	Bullet(float x, float y, float heading){
+		this.size=10;
 		this.x=x;
 		this.y=y;
 		this.heading=heading;
@@ -24,7 +26,7 @@ public class Bullet implements Displayable{
 	
 	public void display(PApplet app) {
 		app.fill(r, g, b);
-		app.ellipse(x, y, 10, 10);
+		app.ellipse(x, y, size, size);
 	}
 	
 }
