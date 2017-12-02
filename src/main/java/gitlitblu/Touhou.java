@@ -12,6 +12,7 @@ public class Touhou implements Displayable{
 	
 	private Touhou() {
 		clear();
+		
 	}
 	
 	public Touhou(PApplet app){

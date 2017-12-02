@@ -16,11 +16,15 @@ public class GitLitBlu extends PApplet {
     
     private final Keys keys = new Keys();
     
+    private boolean inBattle;
+    
     private MainCharacter mainCharacter;
     
     private final List<Enemy> enemies = new ArrayList<>();
     
-    //    private Touhou t;
+    private Touhou t;
+    
+    public long time;
     
     public static void main(final String[] args) {
         PApplet.main(GitLitBlu.class.getName());
@@ -36,8 +40,7 @@ public class GitLitBlu extends PApplet {
         mainCharacter = new MainCharacter(this, "Alphys.png", width * 0.5f, height * 0.5f);
         enemies.add(new Enemy(this, "Froggit.png", 100, 100, 200));
         enemies.get(0).setPreText(Arrays.asList("Hello"));
-        //    	t = new Touhou();
-        //    	t.populateAtTop(this, 10);
+        t = new Touhou(this);
     }
     
     public void nextScreen() {
@@ -47,31 +50,44 @@ public class GitLitBlu extends PApplet {
     }
     
     public void startBattle() {
-        System.out.println("starting battle");
-        // TODO
+    	inBattle = true;
+    	t.clear();
+    	time = System.currentTimeMillis();
+    	System.out.println("starting battle");
+        
     }
     
     @Override
     public void draw() {
         fill(150);
         clear();
-        mainCharacter.checkNearEnemies(enemies);
-        mainCharacter.display(this);
-        for (final Enemy enemy : enemies) {
-            enemy.display(this);
-        }
         
-        mainCharacter.keysPressed(keys);
-        for (final Enemy enemy : enemies) {
-            enemy.keysPressed(keys);
+        if (!inBattle) {
+	        mainCharacter.checkNearEnemies(enemies);
+	        mainCharacter.display(this);
+	        for (final Enemy enemy : enemies) {
+	            enemy.display(this);
+	        }
+	        
+	        mainCharacter.keysPressed(keys);
+	        for (final Enemy enemy : enemies) {
+	            enemy.keysPressed(keys);
+	        }
         }
-        //        t.display(this);
+        else {
+        	t.update(this);
+        	t.display(this);
+        	
+        }
+        if (System.currentTimeMillis() > time + 3000)
+        	inBattle = false;
     }
     
     @Override
     public void keyPressed(final KeyEvent event) {
         super.keyPressed(event);
         keys.keyPressed(event);
+        t.keyPressed(keys);
     }
     
     @Override
