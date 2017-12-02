@@ -2,7 +2,6 @@ package gitlitblu;
 
 import java.util.List;
 
-import processing.core.PApplet;
 import processing.event.KeyEvent;
 
 /**
@@ -16,10 +15,12 @@ public class MainCharacter extends Sprite {
     
     private float speed;
     
-    public MainCharacter(final PApplet app, final String imgName,
+    private Enemy currentEnemy = null;
+    
+    public MainCharacter(final GitLitBlu app, final String imgName,
             final float x, final float y) {
         super(app, imgName, x, y);
-        speed = app.width * app.height * (1.0f / 50000);
+        speed = app.width * app.height * (1.0f / 80000);
     }
     
     public void setSpeed(final float speed) {
@@ -52,14 +53,38 @@ public class MainCharacter extends Sprite {
                     break;
             }
         }
+        // all edges are walls,
+        // except if you move to the right, you go to the next screen
+        
+        if (x < 0) {
+            x += speed;
+        } else if (x > app.width) {
+            x -= app.width;
+            app.nextScreen();
+        }
+        
+        if (y < 0) {
+            y += speed;
+        } else if (y > app.height) {
+            y -= speed;
+        }
     }
     
     public void checkNearEnemies(final List<Enemy> enemies) {
-        frozen = false;
+        if (currentEnemy != null) {
+            frozen = currentEnemy.isSpeaking();
+            if (!frozen && !currentEnemy.inRadius(x, y)) {
+                frozen = false;
+            }
+            return;
+        }
+        
         for (final Enemy enemy : enemies) {
             if (enemy.inRadius(x, y)) {
-                frozen = true;
+                currentEnemy = enemy;
                 enemy.speak();
+                checkNearEnemies(null);
+                return;
             }
         }
     }

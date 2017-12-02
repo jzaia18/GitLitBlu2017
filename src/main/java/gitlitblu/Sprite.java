@@ -10,12 +10,15 @@ import processing.core.PImage;
  */
 public class Sprite implements Displayable {
     
-    private final PImage img;
+    protected final GitLitBlu app;
+    
+    protected final PImage img;
     
     protected float x;
     protected float y;
     
-    public Sprite(final PApplet app, final String imgName, final float x, final float y) {
+    public Sprite(final GitLitBlu app, final String imgName, final float x, final float y) {
+        this.app = app;
         img = app.loadImage("images/" + imgName);
         this.x = x;
         this.y = y;
