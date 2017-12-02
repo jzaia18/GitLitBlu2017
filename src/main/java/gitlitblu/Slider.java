@@ -6,7 +6,7 @@ import processing.event.KeyEvent;
 public class Slider {
 	private float x;
 	private boolean isMoving;
-	private boolean hit;
+	public Boolean hit;
 	public Keys keys;
 	
 	public Slider() {
@@ -21,7 +21,11 @@ public class Slider {
 	
 	public void slide() { //movement of slider
 		if (isMoving) {
-			x *= (float) 1.1;
+			if (x < 700) {
+				x *= (float) 1.1;
+			}
+			else
+				hit = false;
 		}
 	}
 	
@@ -38,10 +42,8 @@ public class Slider {
     }
 	
 	public void attack(PApplet app) {
-		float hitLeft = (app.width / 4);
-		float hitRight = (app.width - (app.width / 4));
     	if (isMoving == false) {
-    		if (x > hitLeft && x < hitRight) {
+    		if (x > 0 && x < 700) {
     			hit = true;
     		}
     		else {
