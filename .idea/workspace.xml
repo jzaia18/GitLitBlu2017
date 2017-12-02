@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa21b53f-efa8-40fe-aa3e-a6dd70401120" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/Character.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gitlitblu/Character.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gitlitblu/GitLitBlu.class" afterPath="$PROJECT_DIR$/target/classes/gitlitblu/GitLitBlu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/Displayable.java" afterPath="$PROJECT_DIR$/src/main/java/gitlitblu/Displayable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java" afterPath="$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -25,13 +20,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1880">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,6 +36,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -356,7 +352,7 @@
       <option name="presentableId" value="Default" />
       <updated>1512234247510</updated>
       <workItem from="1512234253945" duration="930000" />
-      <workItem from="1512238623920" duration="1831000" />
+      <workItem from="1512238623920" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="added Character">
       <created>1512241637518</created>
@@ -365,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512241637518</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="got multiple keys to work at once">
+      <created>1512243106300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512243106300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2761000" />
+    <option name="totallyTimeSpent" value="3379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -410,7 +413,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Character" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Character" />
+    <MESSAGE value="got multiple keys to work at once" />
+    <option name="LAST_COMMIT_MESSAGE" value="got multiple keys to work at once" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -423,10 +427,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -450,13 +454,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1880">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>

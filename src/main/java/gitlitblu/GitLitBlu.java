@@ -1,5 +1,8 @@
 package gitlitblu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
@@ -12,7 +15,10 @@ public class GitLitBlu extends PApplet {
     
     private final Keys keys = new Keys();
     
-    private Sprite mainCharacter;
+    private MainCharacter mainCharacter;
+    
+    private final List<Enemy> enemies = new ArrayList<>();
+    
     //    private Touhou t;
     
     public static void main(final String[] args) {
@@ -26,7 +32,8 @@ public class GitLitBlu extends PApplet {
     
     @Override
     public void setup() {
-        mainCharacter = new Sprite(this, "Alphys.png", width * 0.5f, height * 0.5f);
+        mainCharacter = new MainCharacter(this, "Alphys.png", width * 0.5f, height * 0.5f);
+        enemies.add(new Enemy(this, "Froggit.png", 100, 100, 200));
         //    	t = new Touhou();
         //    	t.populateAtTop(this, 10);
     }
@@ -35,7 +42,11 @@ public class GitLitBlu extends PApplet {
     public void draw() {
         fill(150);
         clear();
+        mainCharacter.checkNearEnemies(enemies);
         mainCharacter.display(this);
+        for (final Enemy enemy : enemies) {
+            enemy.display(this);
+        }
         //        t.display(this);
     }
     
@@ -43,7 +54,7 @@ public class GitLitBlu extends PApplet {
     public void keyPressed(final KeyEvent event) {
         super.keyPressed(event);
         keys.keyPressed(event);
-        mainCharacter.keyPressed(keys);
+        mainCharacter.keysPressed(keys);
     }
     
     @Override
