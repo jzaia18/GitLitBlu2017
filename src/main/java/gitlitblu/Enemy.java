@@ -79,14 +79,8 @@ public class Enemy extends Sprite {
                 text = null;
             }
         } else {
-            if (keys.anyMatch(event -> {
-                System.out.println("aswd".indexOf(event.getKey()));
-                return "aswd".indexOf(event.getKey()) != -1;
-            })) {
-                System.out.println("returning early");
-                return;
-            }
-            if (keys.newKeyPressed()) {
+            if (keys.newKeyPressed()
+                    && keys.anyMatch(event -> "aswd".indexOf(event.getKey()) == -1)) {
                 text = null;
                 //                System.out.println("nulling text");
             }

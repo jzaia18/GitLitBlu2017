@@ -23,6 +23,10 @@ public class MainCharacter extends Sprite {
         speed = app.width * app.height * (1.0f / 80000);
     }
     
+    public Enemy currentEnemy() {
+        return currentEnemy;
+    }
+    
     public void setSpeed(final float speed) {
         this.speed = speed;
     }
