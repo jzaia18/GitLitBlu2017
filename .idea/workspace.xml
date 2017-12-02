@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa21b53f-efa8-40fe-aa3e-a6dd70401120" name="Default" comment="added battling text">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gitlitblu/GitLitBlu.class" afterPath="$PROJECT_DIR$/target/classes/gitlitblu/GitLitBlu.class" />
+    <list default="true" id="aa21b53f-efa8-40fe-aa3e-a6dd70401120" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GitLitBlu.jar" afterPath="$PROJECT_DIR$/GitLitBlu.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/Enemy.java" afterPath="$PROJECT_DIR$/src/main/java/gitlitblu/Enemy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java" afterPath="$PROJECT_DIR$/src/main/java/gitlitblu/GitLitBlu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gitlitblu/Touhou.java" afterPath="$PROJECT_DIR$/src/main/java/gitlitblu/Touhou.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -353,7 +350,7 @@
       <option name="presentableId" value="Default" />
       <updated>1512234247510</updated>
       <workItem from="1512234253945" duration="930000" />
-      <workItem from="1512238623920" duration="6273000" />
+      <workItem from="1512238623920" duration="6349000" />
     </task>
     <task id="LOCAL-00001" summary="added Character">
       <created>1512241637518</created>
@@ -383,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512254791332</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="merged all the parts together">
+      <created>1512258972781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512258972781</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7203000" />
+    <option name="totallyTimeSpent" value="7279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -432,7 +436,8 @@
     <MESSAGE value="got multiple keys to work at once" />
     <MESSAGE value="added enemies that speak to you" />
     <MESSAGE value="added battling text" />
-    <option name="LAST_COMMIT_MESSAGE" value="added battling text" />
+    <MESSAGE value="merged all the parts together" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged all the parts together" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
