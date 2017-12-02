@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa21b53f-efa8-40fe-aa3e-a6dd70401120" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GitLitBlu.jar" afterPath="$PROJECT_DIR$/GitLitBlu.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/target/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -350,7 +350,7 @@
       <option name="presentableId" value="Default" />
       <updated>1512234247510</updated>
       <workItem from="1512234253945" duration="930000" />
-      <workItem from="1512238623920" duration="6349000" />
+      <workItem from="1512238623920" duration="6393000" />
     </task>
     <task id="LOCAL-00001" summary="added Character">
       <created>1512241637518</created>
@@ -387,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512258972781</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added runnable JAR that runs game">
+      <created>1512259039056</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512259039056</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7279000" />
+    <option name="totallyTimeSpent" value="7323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -437,7 +444,8 @@
     <MESSAGE value="added enemies that speak to you" />
     <MESSAGE value="added battling text" />
     <MESSAGE value="merged all the parts together" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged all the parts together" />
+    <MESSAGE value="added runnable JAR that runs game" />
+    <option name="LAST_COMMIT_MESSAGE" value="added runnable JAR that runs game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
