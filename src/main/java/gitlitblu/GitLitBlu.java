@@ -13,4 +13,19 @@ public class GitLitBlu extends PApplet {
         PApplet.main(GitLitBlu.class.getName());
     }
     
+    @Override
+    public void settings() {
+        
+    }
+    
+    @Override
+    public void setup() {
+        
+    }
+    
+    @Override
+    public void draw() {
+        
+    }
+    
 }
