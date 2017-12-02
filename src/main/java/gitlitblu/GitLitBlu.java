@@ -9,6 +9,8 @@ import processing.core.PApplet;
  */
 public class GitLitBlu extends PApplet {
     
+    private Character character;
+    
     public static void main(final String[] args) {
         PApplet.main(GitLitBlu.class.getName());
     }
@@ -20,7 +22,7 @@ public class GitLitBlu extends PApplet {
     
     @Override
     public void setup() {
-        
+        character = new Character(this);
     }
     
     @Override
